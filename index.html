@@ -27,6 +27,8 @@
         1. ”TOPPY”って何？
     </h2>
     <hr>
+
+    <br><br>
 </section>
 
 
@@ -35,24 +37,48 @@
         2. 我々の活動について
     </h2>
     <hr>
+
+    <br><br>
 </section>
+
+
+<section>
+    <h2>
+        3. 越前市周辺の観光マップ
+    </h2>
+    <hr>
+
+    <div class="map">
+        <img src="./image/etizen.jpg" alt="越前市の図" title="越前市周辺" border="2px" width="100%">
+        <button class="takefu_sta" onclick="location.href='takefueki.html'">
+            1.ハピラインふくい武生駅
+        </button>
+    </div>
+
+    <br><br>
+</section>
+
     
 
     <button class="btn" onclick="location.href='takefueki.html'">
         1.ハピラインふくい武生駅
     </button>  
 
-    <div class="url">
-        <a href="https://top-corp.jp/"> (株)TOPの公式サイトはこちら </a>
+    <div style="position:relative; top:20px; left:50px">
+        <img src="./image/etizen.jpg" alt="越前市の図" title="越前市周辺" border="2px" width=800px>
     </div>
+
+
+
 
     <div style="position:relative; top:20px; left:50px">
         <img src="./image/web_qr.png" alt="QRコード" title="このサイトに飛べます。" border="2px" width=400px>
     </div>
-    
-    <div style="position:relative; top:20px; left:50px">
-        <img src="./image/etizen.jpg" alt="越前市の図" title="越前市周辺" border="2px" width=800px>
+
+    <div class="url">
+        <a href="https://top-corp.jp/"> (株)TOPの公式サイトはこちら </a>
     </div>
+    
 
 </body>
 
@@ -97,7 +123,16 @@
         margin-left: 0;
         border: none;
     }
-    .btn{
+    .map{
+        position: relative; 
+        width: 100%;
+    }
+    .map button.takefu_sta{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    button{
         font-size: 18px;
         border-radius: 10px;
         background-color: rgb(62, 150, 233);
