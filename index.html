@@ -12,22 +12,28 @@
 
 <body>
     
-    <div class="tit">
+    <h1>
         Welcome to TOPPY!
-    </div>
+    </h1>
     
-    <p class="index">
+    <p class="intro">
         Hello everyone!
-        <hr><br>
     </p>
+
+    <h2>
+        1. ”TOPPY”って何？
+        <hr class="hr_cont">
+    </h2>
+    
     
 
-    
-    <div style="position:absolute; top:150px; left:50px">
+    <button class="btn" onclick="location.href='takefueki.html'">
+        1.ハピライン福井武生駅
+     </button>  
+
+
+    <div style="position:absolute; top:500px; left:50px">
     <img src="etizen.jpg" alt="福井県の図" title="福井県" border="2px" width=800px>
-         <button class="btn"　onclick="location.href='takefueki.html'">
-            1.ハピライン福井武生駅
-         </button>  
     </div>
 
 </body>
@@ -44,15 +50,29 @@
     body{
         background-color: white 
     }
-    .tit{
+    h1{
         text-align: center;
         font-size: 40px;
         background-color: white;
         color: black
     }
-    .index{
-        font-size: 20px;
+    h2{
         text-align: left;
+        font-size: 30px;
+        background-color: white;
+        color: black
+    }
+    .intro{
+        font-size: 30px;
+        text-align: left;
+        line-height: 1.5
+    }
+    hr.hr_cont{
+        background-color: orange;
+        height: 5px;
+        width: 80%;
+        margin-left: 0;
+        border: none;
     }
     .btn{
         border-radius: 10px;
