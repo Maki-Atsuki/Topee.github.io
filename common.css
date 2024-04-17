@@ -52,7 +52,7 @@ hr{
     left: -10%;
     width: 120%;
     height: 110%;
-    background-color: black;
+    background-color: white;
 }
 .header .frame_rear{
     position: absolute;
@@ -62,8 +62,7 @@ hr{
     height: 60%;
     font-size: 30px;
     font-family: "HG行書体";
-    color: whitesmoke;
-    background-color: black;
+    color: black;
     border: none;
 }
 .header .frame_front{
@@ -72,7 +71,6 @@ hr{
     left: 0%;
     width: 70%;
     height: 80%;
-    background-color: red;
     border: none;
 }
 .header .frame_front .fig_front{
