@@ -46,7 +46,77 @@ hr{
 
 
 
-/* map　におけるコマンド */
+/* 年表におけるコマンド */
+.timeline {
+    width: 100%;
+    max-width: 940px;
+    margin: 5px auto;
+    border: 0.5px solid #eeeeee;
+    align-items: left;
+}
+.timeline-list {
+    padding: 20px 0;
+}
+.timeline-list-item {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.timeline-list-item .date {
+    width: 15%;
+    padding: 0 0 0 20px;
+}
+.timeline-list-item .date .year{
+    font-weight: bold;
+    color: #888888;
+}
+.timeline-list-item .date .day{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+.timeline-list-item .nocontent {
+    position: relative;
+    width: 85%;
+    padding: 0 20px 60px 30px;
+    border-left: 1px solid gray;
+}
+.timeline-list-item .content {
+    position: relative;
+    width: 85%;
+    padding: 0 20px 60px 30px;
+    border-left: 1px solid gray;
+}
+.timeline-list-item .content .what{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.ideas{
+    list-style-type: square;
+}
+.ideas-prezen{
+    list-style-type: none;
+}
+.timeline-list-item .content::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px; /*widthの半分の値を指定しよ*/
+    width: 20px;
+    height: 20px; /*=widthで円になるで*/
+    background-color: hsl(214, 52%, 49%);
+    border-radius: 10px;
+}
+
+
+/*これからの目標で色を変えたかったけどマジ無理*/
+
+
+
+
+
+/* MAP におけるコマンド */
 .map{
     position: relative; 
     width: 100%;
