@@ -34,8 +34,8 @@ hr{
 }
 .url{
     position: relative;
-    top: 20px;
-    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+    font-size: 25px;
 }
 .web_date{
     position: relative;
@@ -75,17 +75,21 @@ hr{
     font-size: 20px;
     color: black;
 }
-.timeline-list-item .nocontent {
+.timeline-list-item .line {
     position: relative;
-    width: 85%;
-    padding: 0 20px 60px 30px;
+    width: 5%;
     border-left: 1px solid gray;
+    left: -0px;
+}
+.timeline-list-item .icon {
+    position: absolute;
+    width: 5%;
+    left: -15px;
 }
 .timeline-list-item .content {
     position: relative;
-    width: 85%;
-    padding: 0 20px 60px 30px;
-    border-left: 1px solid gray;
+    width: 80%;
+    padding: 0 20px 60px 15px;
 }
 .timeline-list-item .content .what{
     font-size: 22px;
@@ -95,20 +99,11 @@ hr{
 .ideas{
     list-style-type: square;
 }
+/* 
 .ideas-prezen{
     list-style-type: none;
 }
-.timeline-list-item .content::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -10px; /*widthの半分の値を指定しよ*/
-    width: 20px;
-    height: 20px; /*=widthで円になるで*/
-    background-color: hsl(214, 52%, 49%);
-    border-radius: 10px;
-}
-
+*/
 
 /*これからの目標で色を変えたかったけどマジ無理*/
 
