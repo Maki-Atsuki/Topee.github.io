@@ -64,7 +64,7 @@ hr{
 }
 .timeline-list-item .date {
     width: 15%;
-    padding: 0 0 0 20px;
+    padding: 2px 0 0 20px;
 }
 .timeline-list-item .date .year{
     font-weight: bold;
@@ -84,12 +84,13 @@ hr{
 .timeline-list-item .icon {
     position: absolute;
     width: 5%;
-    left: -15px;
+    top: 0;
+    left: -20px;
 }
 .timeline-list-item .content {
     position: relative;
     width: 80%;
-    padding: 0 20px 60px 15px;
+    padding: 2px 20px 60px 15px;
 }
 .timeline-list-item .content .what{
     font-size: 22px;
