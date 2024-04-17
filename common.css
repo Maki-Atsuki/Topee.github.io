@@ -1,21 +1,10 @@
-/* index　におけるコマンド */
+/* 共通のコマンド */
 body{
     font-size: 20px;
     background-color: white;
 }
 section{
     margin-bottom: 100px;
-}
-h1{
-    text-align: right;
-    font-family: "Monotype Corsiva";
-    font-size: 50px;
-    background-color: black;
-    color: whitesmoke;
-    background-image: url('./image/ev_front2.jpg');
-    background-size: 90%;
-    background-position: center top;
-    background-repeat: no-repeat;
 }
 h2{
     text-align: left;
@@ -50,12 +39,89 @@ hr{
 
 
 
+/* ヘッダーにおけるコマンド */
+.header{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.header .frame_black{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.header .frame_rear{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    width: calc(100%-left);
+    height: 60%;
+    font-size: 30px;
+    font-family: "HG行書体";
+    color: whitesmoke;
+    background-color: black;
+    border: none;
+}
+.header .frame_front{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 70%;
+    height: 80%;
+    background-color: red;
+    border: none;
+}
+.header .frame_front .fig_front{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .frame_logo{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: calc(100%-left);
+    height: calc(100%-top);
+    border: none;
+}
+.header .frame_logo .fig_logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header h1{
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    font-family: "Monotype Corsiva";
+    font-size: 70px;
+    padding-right: 20px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+/* TOPeeって何？におけるコマンド */
+.what_topee{
+    margin-bottom: 0px;
+}
+
+
+
+
+
 
 /* プロジェクトメンバーにおけるコマンド */
 .member_list{
     list-style: none;
 }
-h3{
+.member_list h3{
     display: flex;
 }
 
