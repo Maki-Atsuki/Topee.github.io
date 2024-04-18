@@ -1,285 +1,646 @@
-/* 共通のコマンド */
-body{
-    font-size: 20px;
-    margin: 0 10px 20px 10px;
-    background-color: white;
-}
-section{
-    margin-bottom: 100px;
-}
-h2{
-    text-align: left;
-    font-size: 30px;
-    background-color: white;
-    color: black;
-}
-.intro{
-    font-size: 30px;
-    text-align: left;
-    line-height: 1.5;
-}
-/*hr{
-    background-color: orange;
-    height: 5px;
-    width: 90%;
-    margin-left: 0;
-    border: none;
-}*/
-.url{
-    position: relative;
-    padding: 10px 0px 20px 0px;
-    font-size: 30px;
-}
-.web_date{
-    position: relative;
-    top: 20px;
-    font-size: 20px;
-}
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+    <meta charset="utf-8">
+    <link href="common.css" rel="stylesheet" type="text/css" media="all">
+    <title>
+        TOPee 株式会社TOP×金沢大学
+    </title>
+</head>
+    
+
+<body>
+
+<!-- 表紙 -->
+<div class="header">
+    <div class="frame_black">  </div>
+    <div class="frame_rear">
+        <p>株式会社TOP</p>
+        <p>　　×</p>
+        <p>　金沢大学</p>
+    </div>
+    <div class="frame_front">
+        <img src="./image/ev_front2.jpg" alt="車体前" title="" class="fig_front"> 
+    </div>
+    <div class="frame_logo">
+        <img src="./image/topee_logo.jpg" alt="ロゴ" title="" class="fig_logo"> 
+    </div>
+    <h1>   
+        Welcome to 
+    </h1>    
+</div>
 
 
 
-
-/* ラインにおけるコマンド */
-.line-container {
-    display: flex; /* フレックスレイアウトを使用 */
-}
-.horizontal-line {
-    border: none;
-    border-top: 5px solid;
-    flex-grow: 1; /* フレックスアイテムが均等に伸びるようにする */
-    margin: 0; 
-}
-.gray-line {
-    border-top-color: gray;
-    width: 20%;
-    height: 2px;
-}
-.orange-line {
-    border-top-color: orange;
-    width: 60%;
-    height: 2px;
-}
+    <p class="intro">
+        Hello everyone!<br><br>
+        越前市の観光で困っていませんか？？下のリンクをご活用くださいね。
+        <div class="url">
+            <a href="map.html"> <strong>越前市内の観光マップです！</strong> </a>
+        </div>
+    </p>
 
 
 
+<section>
+    <h2>
+        1. ”TOPee”って何？
+    </h2>
+    <div class="line-container">
+        <!-- 1つ目の水平線 -->
+        <hr class="horizontal-line gray-line">
+        <!-- 2つ目の水平線 -->
+        <hr class="horizontal-line orange-line">
+    </div>
+    
+    （株）TOPがつくった電気モーター”e-Axle”を搭載した1～2人向けの小型電気自動車です！
+    <br>
+    <u>追加情報あれば記すつもり。</u>
 
+    <div class="url">
+        <a href="https://top-corp.jp/"> (株)TOPの公式サイトはこちら </a>
+    </div>
 
-/* ヘッダーにおけるコマンド */
-.header{
-    position: relative;
-    width: 100%;
-    height: 500px;
-}
-.header .frame_black{
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 120%;
-    height: 110%;
-    background-color: white;
-}
-.header .frame_rear{
-    position: absolute;
-    top: 0%;
-    left: 75%;
-    width: calc(100%-left);
-    height: 60%;
-    font-size: 30px;
-    font-family: "HG行書体";
-    color: black;
-    border: none;
-}
-.header .frame_front{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 70%;
-    height: 80%;
-    border: none;
-}
-.header .frame_front .fig_front{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.header .frame_logo{
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    width: calc(100%-left);
-    height: calc(100%-top);
-    border: none;
-}
-.header .frame_logo .fig_logo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.header h1{
-    position: absolute;
-    top: 75%;
-    right: 50%;
-    font-family: "Monotype Corsiva";
-    font-size: 70px;
-    background-color: white;
-    color: black;
-}
+    <h3 class="what_topee">
+        TOPeeという名前
+    </h3>
+    「TOP」= 株式会社TOP（Takefu Orginal Production）の社名<br>
+    複数の「e」= 越前、e-Axle、エコなど様々<br>
+    鳥をモチーフとした、可愛らしいお名前になりました！
+    <div class="fig-intro">
+        <img src="./image/topee_logo.jpg" alt="ロゴ" title="TOPeeのロゴです" class="fig_intro-logo"> 
+        <p class="o-comment"> TOPeeロゴ<br>"o"の文字が何とも素敵。 </p>
+    </div>
+
+    <h3 class="what_topee">
+        TOPeeのデザイン
+    </h3>
+    大空を羽ばたく1羽の鳥をイメージして、空のような青色をベースにデザイン。<br>
+    TOPeeのロゴは勿論、鳥と言うにふさわしい工夫がちりばめられていますね。
+    <div class="fig-intro">
+        <img src="./image/ev_front.jpg" alt="フロント" title="車体前" class="fig_intro-front">
+        <img src="./image/ev_rear.jpg" alt="リア" title="車体後" class="fig_intro-rear"> 
+    </div>
+
+</section>
 
 
 
+<section>
+    <h2>
+        2. プロジェクトメンバー
+    </h2>
+    <div class="line-container">
+        <!-- 1つ目の水平線 -->
+        <hr class="horizontal-line gray-line">
+        <!-- 2つ目の水平線 -->
+        <hr class="horizontal-line orange-line">
+    </div>
+    
+
+    <ul class="member_list">
+    <li>
+        <h3>
+            <ruby>飯田愛理<rt>いいだあいり</rt><small>（人間社会学域法学類4年）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
+              
+        </p>
+    </li>
+
+    <li>
+        <h3>
+            <ruby>稲垣和奏<rt>いながきわかな</rt><small>（人間社会学域法学類4年）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
+              
+        </p>
+    </li>
 
 
 
-
-/* TOPeeって何？におけるコマンド */
-.what_topee{
-    margin-bottom: 0px;
-}
-.fig-intro{
-    display: flex;
-}
-.fig-intro .fig_intro-logo{
-    object-fit: contain;
-    width: 30%;
-    height: auto;
-    margin: 0 50px 0 0;
-}
-.fig-intro .fig_intro-front{
-    object-fit: contain;
-    width: 30%;
-    height: auto;
-    margin: 30px 50px 0 0;
-}
-.fig-intro .fig_intro-rear{
-    object-fit: contain;
-    width: 30%;
-    height: auto;
-    margin: 30px 50px 0 0;
-}
-.fig-intro .o-comment{
-    position: relative;
-    display: inline-block;
-    margin: 1.5em 0 1.5em 15px;
-    padding: 20px 20px;
-    min-width: 120px;
-    max-width: 100%;
-    color: #12202b;
-    font-size: 16px;
-    border: solid 2px #70d0ee;
-}
-.fig-intro .o-comment::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -30px;
-    margin-top: -15px;
-    border: 15px solid transparent;
-    border-right: 15px solid #70d0ee;
-}
+    <li>
+        <h3>
+            <ruby>古波倉正梧<rt>こはぐらしょうご</rt><small>（人間社会学域経済学類4年）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
+              
+        </p>
+    </li>
 
 
+    <li>
+        <h3>
+            <ruby>中島優一朗<rt>なかしまゆういちろう</rt><small>（融合学域先導学類3年）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
 
+        </p>
+    </li>
 
+    <li>
+        <h3>
+            <ruby>牧野温樹<rt>まきのあつき</rt><small>（理工学域数物科学類4年）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
 
+        </p>
+    </li>
 
+    <li>
+        <h3>
+            <ruby>天野拓己<rt>あまのたくみ</rt><small>（株式会社TOP）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
 
+        </p>
+    </li>
 
-/* プロジェクトメンバーやメッセージにおけるコマンド */
-.member_list{
-    list-style: none;
-}
-.member_list h3{
-    display: flex;
-}
-.member{
-    margin-bottom: 50px 
-}
+    <li>
+        <h3>
+            <ruby>大瀧仁紫<rt>おおたき〇〇</rt><small>（株式会社TOP）</small></ruby>
+            <img src="./image/wing.jpg" alt="羽" title="" border="none" width=40px>
+        </h3>
+        <p>  
+            <u>※ファーストネームを尋ねとけ</u>
+        </p>
+    </li>
+    </ul>
+    敬省略
+</section>
 
 
 
 
 
-
-
-/* 年表におけるコマンド */
-.timeline {
-    width: 100%;
-    max-width: 940px;
-    margin: 5px auto;
-    border: 0.5px solid #eeeeee;
-    align-items: left;
-}
-.timeline-list {
-    padding: 20px 0;
-}
-.timeline-list-item {
-    display: flex;
-    line-height: 1.5;
-    font-size: 16px;
-}
-.timeline-list-item .date {
-    width: 15%;
-    padding: 2px 0 0 20px;
-}
-.timeline-list-item .date .year{
-    font-weight: bold;
-    color: #888888;
-}
-.timeline-list-item .date .day{
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-}
-.timeline-list-item .line {
-    position: relative;
-    width: 5%;
-    border-left: 1px solid gray;
-    left: -0px;
-}
-.timeline-list-item .icon {
-    position: absolute;
-    width: 5%;
-    top: 0;
-    left: -20px;
-}
-.timeline-list-item .content {
-    position: relative;
-    width: 80%;
-    padding: 2px 20px 60px 15px;
-}
-.timeline-list-item .content .what{
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0 0 5px;
-}
-.ideas{
-    list-style-type: square;
-}
-/* 
-.ideas-prezen{
-    list-style-type: none;
-}
-*/
+<section>
+    <h2>
+        3. プロジェクトの始まり
+    </h2>
+    <div class="line-container">
+        <!-- 1つ目の水平線 -->
+        <hr class="horizontal-line gray-line">
+        <!-- 2つ目の水平線 -->
+        <hr class="horizontal-line orange-line">
+    </div>
+    
+    （株）TOP×大学生のきっかけ
+    <br>
+    <u>※届き次第入力</u>
+</section>
 
 
 
 
-/* MAP におけるコマンド */
-.map{
-    position: relative; 
-    width: 100%;
-}
-.map button.takefu_sta{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-button{
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: rgb(62, 150, 233);
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
+
+<section>
+    <h2>
+        4. 私達の活動履歴
+    </h2>
+    <div class="line-container">
+        <!-- 1つ目の水平線 -->
+        <hr class="horizontal-line gray-line">
+        <!-- 2つ目の水平線 -->
+        <hr class="horizontal-line orange-line">
+    </div>
+    
+    
+
+    <div class="timeline">
+    <!-- 年表を作成するお -->
+    <ul class="timeline-list">
+
+        <!-- 2021年 -->
+        <li class="timeline-list-item">
+            <div class="date"> <div class="year">2021<small>年</small></div> </div>
+            <div class="line"></div>
+            <div class="content"></div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">12<font size="3">月</font></small>3<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    小型EV×未来創造プロジェクト説明会＠金沢大学
+                </div>
+                プロジェクトの前身として、全てがここから始まった。<br>
+                プロジェクト目的は「未来に根ざした街づくり！」
+            </div>
+        </li>
+
+        <!-- 2022年 -->
+        <li class="timeline-list-item">
+            <div class="date"> <div class="year">2022<small>年</small></div> </div>
+            <div class="line"></div>
+            <div class="content"></div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">6<font size="3">月</font></small>7<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    試乗会第1弾＠金沢大学
+                </div>
+                金沢大学内で、（株）TOPによってつくられたTOPeeを学生が試乗しました。<br>
+                金沢大学ならではの坂道で、TOPeeの馬力が課題だと発見…
+            </div>
+        </li>
+
+        <!-- 2023年 -->
+        <li class="timeline-list-item">
+            <div class="date"> <div class="year">2023<small>年</small></div> </div>
+            <div class="line"></div>
+            <div class="content"></div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">1<font size="3">月</font></small>16<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠金沢大学
+                </div>
+                北陸新幹線越前たけふ駅周辺における人の移動手段として、小型EV活用を議論しました。
+                <ul class="ideas">
+                    <li> サンドーム福井へのアクセスが悪いから、小型EVを利用できれば！</li>
+                    <li>電車&小型EVの併用で割引！</li>
+                    <li>レンタルシステム整備したい！</li>
+                    <li>少人数旅行がしたい人に何かできない？</li>
+                    <li>ターゲットは誰にする？（高齢者orZ,α世代 / 市内在住者or旅行者）</li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">2<font size="3">月</font></small>21<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    越前市内視察&試乗会第2弾＠越前市
+                </div>
+                福井県越前市の観光地を巡りました。<br>
+                ここで現在と同じメンバーの5人体制に！<br>
+                前回試乗会の試乗会を経て、馬力等数多くの改善がありました。パワーアップしたTOPeeも体験できましたよ！
+                <ul class="ideas">
+                   <li><strong>越前そばの里</strong></li>
+                   <li><strong>越前和紙の里</strong></li>
+                   <li><strong>タケフナイフビレッジ</strong></li>
+                </ul>
+                その後、しっかり議論も行いました。<br>
+                技術や安全面も去ることながら、法規制へのアプローチにも多くの課題がありました...
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">3<font size="3">月</font></small>23<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    TOPee活用法プレゼン＠越前たけふ駅
+                </div>
+                学生5名に加え、（株）TOPの社員2名が、TOPeeの活用法をプレゼンしました。<br>
+                皆さん懸命に準備していました。大変でしたね（汗）
+                <ul class="ideas">
+                    <li>
+                        <strong>飯田愛理</strong><br>
+                        若年層（観光客＋帰省）向けレンタル。サンドーム福井でのライブでも使いたい。
+                    </li>
+                    <li>
+                        <strong>稲垣和奏</strong><br>
+                        観光客向けホテルとTOPee一体型宿泊プラン。SNS口コミで拡散も。
+                    </li>
+                    <li>
+                        <strong>古波倉正梧</strong><br>
+                        観光客向けにスタンプラリー。移住者向けのレンタルミニEVにTOPeeを。
+                    </li>
+                    <li>
+                        <strong>中島優一朗</strong><br>
+                        1人旅旅行客向けにミステリーツアーを企画しよう。
+                    </li>
+                    <li>
+                        <strong>牧野温樹</strong><br>
+                        在住者向けにサブスクライブ型でTOPeeを使い放題。
+                    </li>
+                    <li>
+                        <strong>天野拓己</strong><br>
+                        県内大学生向けでTOPeeを利用、SNSも使って拡散。利用状況の集計・管理システム提案。
+                    </li>
+                    <li>
+                        <strong>大瀧仁紫</strong><br>
+                        自動運転の実現。ルート設定済みツアーなら実現可能かも。
+                    </li>
+                </ul>
+                </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">5<font size="3">月</font></small>24<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠オンライン
+                </div>
+                1度区切りをつけたプロジェクトが再始動！<br>
+                以降も継続する決意を固めました。
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">6<font size="3">月</font></small>20<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠オンライン
+                </div>
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">7<font size="3">月</font></small>11<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ、親睦会＠金沢大学
+                </div>
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">8<font size="3">月</font></small>25<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    市役所や観光地の方々に聞き取り＠越前市
+                </div>
+                <ul class="ideas">
+                    <li>
+                        <strong>越前市役所</strong><br>
+                    </li>
+                    <li>
+                        <strong>紫ゆかりの館</strong><br>
+                        大河ドラマの効果もあり観光客が増えてきている！
+                    </li>
+                    <li>
+                        <strong>越前たけふ駅道の駅</strong><br>
+                        新幹線の利用状況、在来線と離れてるのが...<br>
+                        中小企業が多いのでは、企業向けのアプローチが必要。<br>
+                        道の駅ならではのものがほしい。地元の人の憩いの場にしたい！
+                    </li>
+                    <li>
+                        <strong>越前和紙の里</strong><br>
+                        日本人の学びの場、外国人アーティストの修業の場となっている。
+                        古くから学びとアートとしての支えがある。<br>
+                        お金に和紙が使われているので、新しい技術を模索している。
+                    </li>
+                 </ul>
+                その後、TOPeeの車体を担う（株）トヨタ車体様とお話させていただき、実際に小型モビリティを運用している目線での具体的なご意見を頂けました。貴重です！
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">11<font size="3">月</font></small>13<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠金沢大学（オンライン併用）
+                </div>
+                再び学生により、TOPeeの活用について提案をしました。
+                <ul class="ideas">
+                    <li>
+                        <strong>古波倉正梧</strong><br>
+                        キャンプ×小型EVで「エコ」な生活を。EVを使ったツアーを計画。
+                    </li>
+                    <li>
+                        <strong>中島優一朗</strong><br>
+                        タクシー代わりにEVにしませんか？これをとっかかりに活用の幅を広げよう。
+                    </li>
+                    <li>
+                        <strong>牧野温樹</strong><br>
+                        各観光地住宅地にTOPeeをプールし「まちのり」。運転者と同乗者のマッチングシステム
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+         <!-- 2024年 -->
+         <li class="timeline-list-item">
+            <div class="date"> <div class="year">2024<small>年</small></div> </div>
+            <div class="line"></div>
+            <div class="content"></div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">1<font size="3">月</font></small>18<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠金沢大学（オンライン併用）
+                </div>
+                TOPeeのお試し活用の出発式に向けて、準備をしました。<br>
+                （株）TOP製小型モビリティの名前、デザインや越前市観光マップの考案を学生に依頼されました。
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">3<font size="3">月</font></small>7<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    打合せ＠オンライン
+                </div>
+                ここで名前が正式に”TOPee”に決定！デザインも可愛らしく仕上がりました。<br>
+                出発式ももうすぐです...
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date"> <div class="day">4<font size="3">月</font></small>20<font size="3">日</font></div> </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_ob2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    TOPee出発式＠越前市王子保駅
+                </div>
+                <u>※コレカラ、更新予定デス・・・・</u>
+            </div>
+        </li>
+
+        <li class="timeline-list-item">
+            <div class="date">  </div>
+            <div class="line">
+                <div class="icon">
+                <img src="./image/topee_or2.jpg" alt="TOPeeのアイコン" title="" border="none" width="40px">
+                </div>
+            </div>
+            <div class="content">
+                <div class="what">
+                    これからの目標！！！
+                </div>
+                TOPeeを一般向けサービスとして、より大々的な活用して形にしたいですね...
+            </div>
+        </li>
+
+    </ul>
+    </div>
+
+
+</section>
+
+
+
+<section>
+    <h2>
+        5. プロジェクトメンバーよりメッセ―ジ
+    </h2>
+    <div class="line-container">
+        <!-- 1つ目の水平線 -->
+        <hr class="horizontal-line gray-line">
+        <!-- 2つ目の水平線 -->
+        <hr class="horizontal-line orange-line">
+    </div>
+    
+    <div class="member">
+        <h3>
+            <ruby>飯田愛理<rt>いいだあいり</rt><small>（人間社会学域法学類4年）</small></ruby>
+        </h3>
+        <p>  
+              
+        </p>
+    </div>
+
+    <div class="member">
+        <h3>
+            <ruby>稲垣和奏<rt>いながきわかな</rt><small>（人間社会学域法学類4年）</small></ruby>
+        </h3>
+        <p>  
+            　参加のきっかけは、飯田さんから声をかけてもらったことです。正直なところ、福井に縁もゆかりもなく、車やEVに特別興味があったわけでもなく、「なんかおもしろそう！今まで関わったことのないような人と関われるかな〜」くらいにしか考えていませんでした。実際に参加してみて、TOPの方も学生も先生方も皆あたたかい人たちばかりで、ワークに参加するのがとても楽しかったです。<br>
+            　1番の思い出は、とっぴぃに初めて試乗したときです。実は免許を取るのにかなり大苦戦した運転ド下手人間なのですが、この小型EVは難なく運転できて感動しました…！とっぴぃの一般向け展開が実現した暁には、運転に苦手意識がある方も騙されたと思って一度乗ってみてほしいです。<br>
+            　改めて、このプロジェクトで関わってくださったみなさん、貴重な経験をさせていただき、本当にありがとうございました。この先とっぴぃがたくさんの人に愛される乗り物になりますように！
+        </p>
+    </div>
+
+
+
+    <div class="member">
+        <h3>
+            <ruby>古波倉正梧<rt>こはぐらしょうご</rt><small>（人間社会学域経済学類4年）</small></ruby>
+        </h3>
+        <p>  
+            　私がこのプロジェクトに参加しようと思った理由は、地域を新しい技術を利用して盛り上げたかったからです。また、地元の企業であるTOPが中心となり、持続的な地域振興を目指すという点にも惹かれ、その力になりたいと思い、参加しました。<br>
+            　当プロジェクトに取り組む中で様々な出来事がありましたが、最も印象に残っているのは、数多くの議論を経て自らのアイデアを発表したことです。私はEVを用いて地域を発展させるというワクワク感で満ちあふれていましたが、議論を進めるうちに多くの困難にも直面しました。中には私たちの手ではどうしようもない課題もありましたが、全員で知恵を絞り、困難を乗り越えたいという意思が強まりました。その結果、アイデアを形にして発表できた際は達成感を感じました。<br>
+            　正直私が当初想像していたほど容易くはないものの、越前でワクワクする体験が創出できるよう、全員で当プロジェクトに取り組んでいます。まだまだ道半ばですが、このプロジェクトがより良い形になるよう、引き続き力になれれば幸いです。<br>            
+        </p>
+    </div>
+
+
+    <div class="member">
+        <h3>
+            <ruby>中島優一朗<rt>なかしまゆういちろう</rt><small>（融合学域先導学類3年）</small></ruby>
+        </h3>
+        <p>  
+            　このプロジェクトに参加した理由は、北陸には北陸新幹線の敦賀延伸をよく思わない人も多い中で、何か１つでも北陸に希望が生まれたらいいな、それに関わっていられたらいいなと思ったからです。<br>
+            　1番の思い出は越前市に赴き、市役所の方を交えて討論をしたことです。立場や年齢などすべてが異なる人と人とが面と向かって話し合うことで今まで見えていなかった様々なことが見え、多様な視点を得ることにつながりました。また、地域のこれからを担う方の言葉から、学生である自分たちができることとは何だろうかと深く考えさせられるきっかけにもなりました。<br>
+            　このプロジェクトで関わってくださった方は温かい方が多く、たくさんのそのような方とのかかわりが自分を成長させてくれました。貴重な体験をさせていただき、ありがとうございました。正直、北陸新幹線敦賀延伸に出発式が間に合わなかった悔しさはありますが、これからTopeeが広まり、１つでも多くの笑顔が生まれ、1人でも多くの記憶に残ることを願っています。<br>
+        </p>
+    </div>
+
+    <div class="member">
+        <h3>
+            <ruby>牧野温樹<rt>まきのあつき</rt><small>（理工学域数物科学類4年）</small></ruby>
+        </h3>
+        <p>
+            　Project AERUのイベントでは「雑談のチカラ」という雑談から新たなアイデアを生み出そうというものがあり、会話が大好物な私は幾つか楽しそうなイベントに参加していました。そこでお誘いを頂いたのがこのプロジェクト。自分が好きな「自動車」で大好きな「会話」ができるということで、参加させて頂くのに何も躊躇いはありませんでした。<br>
+            　お恥ずかしい話、明確に目標があって参加したわけではなく、「楽しそうだから」という短絡的な考えでした。しかし、プロジェクトが進んで、様々な思考に触れていく過程の中で、「こんなことをやってみたいなぁ。」や「こうやったらいいのに。」などの想いが次第に浮かび上がってきて、仲間との“言葉での戦争”を経て結果的に目標といえるものが確立していったと思っています。<br>
+            　1番の想い出ですが、今皆様がご覧になっているこのWEBサイト。私が作ったんです！フライヤー（チラシ）というアナログ媒体とこのデジタル媒体。どちらも使えば効果倍増なのでは？と思い、1から勉強して作ってみました！仲間の協働した集大成として、形となっていく過程は何物にも代えられない価値のあるものであったと確信しています。<br>
+        </p>
+    </div>
+</section>
+
+
+
+
+
+
+
+当WEBサイトをご覧頂きありがとうございました。<br>
+これからも温かく見守ってほしいッピ！
+
+
+    <div class="web_date">
+        最終更新日　<u><time daytime="2024-04-20">2024年4月20日</time></u>
+    </div>
+
+
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+
