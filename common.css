@@ -18,7 +18,7 @@ h2{
     text-align: left;
     line-height: 1.5;
 }
-/*hr{
+/*hr{    ライン１色はしょぼいや
     background-color: orange;
     height: 5px;
     width: 90%;
@@ -255,31 +255,10 @@ h2{
 .ideas{
     list-style-type: square;
 }
-/* 
+/* アイコンを入れない箇条書き
 .ideas-prezen{
     list-style-type: none;
 }
 */
 
 
-
-
-/* MAP におけるコマンド */
-.map{
-    position: relative; 
-    width: 100%;
-}
-.map button.takefu_sta{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-button{
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: rgb(62, 150, 233);
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
