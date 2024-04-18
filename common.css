@@ -18,13 +18,13 @@ h2{
     text-align: left;
     line-height: 1.5;
 }
-hr{
+/*hr{
     background-color: orange;
     height: 5px;
-    width: 80%;
+    width: 90%;
     margin-left: 0;
     border: none;
-}
+}*/
 .url{
     position: relative;
     padding: 10px 0px 20px 0px;
@@ -34,6 +34,30 @@ hr{
     position: relative;
     top: 20px;
     font-size: 20px;
+}
+
+
+
+
+/* ラインにおけるコマンド */
+.line-container {
+    display: flex; /* フレックスレイアウトを使用 */
+}
+.horizontal-line {
+    border: none;
+    border-top: 5px solid;
+    flex-grow: 1; /* フレックスアイテムが均等に伸びるようにする */
+    margin: 0; 
+}
+.gray-line {
+    border-top-color: gray;
+    width: 20%;
+    height: 2px;
+}
+.orange-line {
+    border-top-color: orange;
+    width: 60%;
+    height: 2px;
 }
 
 
