@@ -28,7 +28,7 @@ hr{
 .url{
     position: relative;
     padding: 10px 0px 20px 0px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .web_date{
     position: relative;
@@ -111,18 +111,64 @@ hr{
 .what_topee{
     margin-bottom: 0px;
 }
+.fig-intro{
+    display: flex;
+}
+.fig-intro .fig_intro-logo{
+    object-fit: contain;
+    width: 30%;
+    height: auto;
+    margin: 0 50px 0 0;
+}
+.fig-intro .fig_intro-front{
+    object-fit: contain;
+    width: 30%;
+    height: auto;
+    margin: 30px 50px 0 0;
+}
+.fig-intro .fig_intro-rear{
+    object-fit: contain;
+    width: 30%;
+    height: auto;
+    margin: 30px 50px 0 0;
+}
+.fig-intro .o-comment{
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 20px 20px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #12202b;
+    font-size: 16px;
+    border: solid 2px #70d0ee;
+}
+.fig-intro .o-comment::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #70d0ee;
+}
 
 
 
 
 
 
-/* プロジェクトメンバーにおけるコマンド */
+
+
+/* プロジェクトメンバーやメッセージにおけるコマンド */
 .member_list{
     list-style: none;
 }
 .member_list h3{
     display: flex;
+}
+.member{
+    margin-bottom: 50px 
 }
 
 
