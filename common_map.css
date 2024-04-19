@@ -1,0 +1,299 @@
+/* 共通のコマンド */
+body{
+    font-size: 20px;
+    margin: 0 10px 20px 10px;
+    background-color: white;
+}
+section{
+    margin-bottom: 100px;
+}
+h2{
+    text-align: left;
+    font-size: 50px;
+    background-color: white;
+    color: black;
+}
+.url{
+    position: relative;
+    padding: 10px 0px 20px 0px;
+    font-size: 30px;
+}
+
+
+
+
+/* ラインにおけるコマンド */
+.line-container {
+    display: flex; /* フレックスレイアウトを使用 */
+}
+.horizontal-line {
+    border: none;
+    border-top: 5px solid;
+    flex-grow: 1; /* フレックスアイテムが均等に伸びるようにする */
+    margin: 0; 
+}
+.gray-line {
+    border-top-color: gray;
+    width: 20%;
+    height: 2px;
+}
+.blue-line {
+    border-top-color: rgb(0, 89, 255);
+    width: 60%;
+    height: 2px;
+}
+
+
+
+
+
+/* ヘッダーにおけるコマンド */
+.header{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.header .frame_black{
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 110%;
+    background-color: white;
+}
+.header .frame_front{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+.header .frame_front .fig_front{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .frame_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100%-left);
+    height: calc(100%-top);
+    border: none;
+}
+.header .frame_logo .fig_logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header h1{
+    position: absolute;
+    top: 38%;
+    left: 37%;
+    font-family: "Monotype Corsiva";
+    font-size: 55px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* MAP におけるコマンド */
+.map{
+    position: relative; 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.map .etizen{
+    position: relative;
+    transform: scale(1, 1);
+    border: 2px solid;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+
+/* starのコマンド */
+.posi-1{ /* ハピラインふくい武生駅 */
+    display: flex;
+    position: absolute;
+    top:  30%;
+    left: 38%;
+}
+.posi-2{ /* 北陸新幹線越前たけふ駅&道の駅 */
+    display: flex;
+    position: absolute;
+    top:  40%;
+    left: 50%;
+}
+.posi-3{ /* サンドーム福井 */
+    display: flex;
+    position: absolute;
+    top:  25%;
+    left: 45%;
+}
+.posi-4{ /* 越前そばの里 */
+    display: flex;
+    position: absolute;
+    top:  37%;
+    left: 53%;
+}
+.posi-5{ /* 越前和紙の里 */
+    display: flex;
+    position: absolute;
+    top:  35%;
+    left: 60%;
+}
+.posi-6{ /* タケフナイフビレッジ */
+    display: flex;
+    position: absolute;
+    top:  44%;
+    left: 59%;
+}
+.posi-7{ /* 西山公園 */
+    display: flex;
+    position: absolute;
+    top:  28%;
+    left: 35%;
+}
+.posi-8{ /* 越前海岸 */
+    display: flex;
+    position: absolute;
+    top:  25%;
+    left: -4%;
+}
+.posi-9{ /* 今庄365スキー場 */
+    display: flex;
+    position: absolute;
+    top:  90%;
+    left: 30%;
+}
+.posi-10{ /* ツリーピクニックアドベンチャー */
+    display: flex;
+    position: absolute;
+    top:  58%;
+    left: 91%;
+}
+.posi-11{ /* 紙祖神　岡太神社・大瀧神社 */
+    display: flex;
+    position: absolute;
+    top:  39%;
+    left: 63%;
+}
+.posi-12{ /* 紫ゆかりの館 */
+    display: flex;
+    position: absolute;
+    top:  45%;
+    left: 33%;
+}
+.posi-13{ /* 越前市役所 */
+    display: flex;
+    position: absolute;
+    top:  32%;
+    left: 33%;
+}
+/* 場所なんかあるわけないだろ
+    越前ガニはどこにでもある
+.posi-14{  越前がに 
+    display: flex;
+    position: absolute;
+    top:  0;
+    left: 0;
+}
+*/
+
+
+
+
+.number{
+    font-size: 27px;
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    left: 55px;
+    top: 42px;
+    transform: translate(-50%,-50%);
+}
+.container {
+    margin: 30px;
+    display: flex;
+}
+.star {
+    position: relative;
+    border-bottom: 16px solid rgb(255, 217, 50);
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    transform: rotate(-37deg);
+}
+.star::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    border-bottom: 16px solid rgb(255, 217, 50);
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    transform: rotate(-71.5deg);
+}
+.star::after {
+    content: "";
+    position: absolute;
+    left: -24px;
+    border-bottom: 16px solid rgb(255, 217, 50);
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    transform: rotate(71.5deg);
+}
+
+
+
+
+
+/* 観光地リスト */
+.sight-list{
+    position: relative;
+    margin: 0 0 50px 10px;
+}
+
+.sight-list li{
+    font-weight: bold;
+    margin: 0 0 40px 0;
+}
+
+
+
+
+
+
+
+button{
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(62, 150, 233);
+    padding: 10px;
+    font-weight:bold;
+    text-decoration: none;
+    color: white;
+}
+/* ハピラインふくい武生駅 */
+.map button .takefu_sta{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
