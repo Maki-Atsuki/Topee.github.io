@@ -156,6 +156,12 @@ h2{
     height: auto;
     margin: 30px 50px 0 0;
 }
+.fig_intro_o{
+    object-fit: contain;
+    width: 15%;
+    height: auto;
+    margin: 0 50px 0 0;
+}
 .fig-intro .o-comment{
     position: relative;
     display: inline-block;
@@ -260,5 +266,16 @@ h2{
     list-style-type: none;
 }
 */
+
+.event{
+    display: flex;
+    margin: 40px 10px 40px 10px;
+}
+.event_fig{
+    object-fit: contain;
+    width: 200px;
+    margin: 0 10px 0 10px;
+}
+
 
 
